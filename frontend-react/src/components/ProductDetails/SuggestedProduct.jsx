@@ -20,6 +20,7 @@ class SuggestedProduct extends Component {
     axios
       .get(AppURL.SimilarProduct(subcategory))
       .then((response) => {
+        console.log(response.data)
         this.setState({
           ProductData: response.data,
         });
